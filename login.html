@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        }
+        h2{
+            color: white;
+            background-color: #9932CC;
+            
+        }
+        .container{
+            padding: 16px;
+            width: 750px;
+            margin-left: 350px;
+            margin-right: 500px;
+        }
+        .container h2{
+            text-align: center;
+        }
+        button {
+            
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        button:hover {
+            opacity:1;
+            background-color:#9932CC;
+        }
+        button .reset:hover{
+            background-color: #9932CC;
+        }
+        .resetbtn{
+            
+            background:linear-gradient(65deg, red ,orange, pink);
+            border-left: 10px solid white;
+        }
+        .loginbtn{
+            
+            background-color:red;
+            
+            border-right: 10px solid white;
+        }
+        .loginbtn, .resetbtn{
+            float: left;
+            width: 50%;
+            border-radius: 25px;
+        }
+        a{
+            text-align:right;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="container">
+    <h2>LogIn</h2>
+    <label for="email"><b>Email </b> </label><br>
+    <input type="text" placeholder="Email" name="email" required/><br>
+    <label for="psw"><b> Password</b> </label><br>
+    <input type="password" placeholder="Password" name="psw" required/><br>
+    <div class="thebuttons">
+        <button type="reset" class="resetbtn">Reset</button>
+        <button type="button" class="loginbtn">LogIn</button><br>
+      </div>
+      <a href="signup.html">Already have an Account?</a>
+</div>
+</form>
+</body>
+</html>
